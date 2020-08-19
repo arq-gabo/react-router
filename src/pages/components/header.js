@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./header.css";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../../images/logo.png";
 
 class Header extends Component {
@@ -10,24 +11,24 @@ class Header extends Component {
         <nav>
           <ul>
             <li>
-              <a href="/" activeClassName="is-selected">
+              <NavLink exact to="/" activeClassName="is-selected">
                 Inicio
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="/videos" activeClassName="is-selected">
+              <NavLink to="/videos" activeClassName="is-selected">
                 Videos
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="/contacto" activeClassName="is-selected">
+              <NavLink to="/contacto" activeClassName="is-selected">
                 Contacto
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="/perfil" activeClassName="is-selected">
+              <NavLink to="/perfil" activeClassName="is-selected">
                 Perfil
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>
