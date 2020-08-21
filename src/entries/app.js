@@ -1,12 +1,13 @@
 import React from "react";
-import { render } from "react-dom";
+import { hydrate } from "react-dom";
 import App from "../pages/containers/app.js";
 
 import { BrowserRouter } from "react-router-dom";
 
 const homeContainer = document.getElementById("home-container");
 
-render(
+//render ()
+hydrate(
   <BrowserRouter>
     <App />
   </BrowserRouter>,
