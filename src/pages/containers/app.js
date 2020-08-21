@@ -38,7 +38,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/videos" component={Videos} />
             <Route exact path="/videos/:id" component={Video} />
-            <Redirect from="/v" to="/videos" />
+            <Redirect exact from="/v" to="/videos" />
             <Redirect from="/v/:id" to="/videos/:id" />
             <Route component={NotFound} />
           </Switch>
